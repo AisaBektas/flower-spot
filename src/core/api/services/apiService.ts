@@ -34,26 +34,6 @@ class ApiService {
   ): Promise<AxiosResponse<T>> {
     return statusChecker(await this._httpClient.post<T>(url, body, config));
   }
-
-  async patch<T = unknown, B = unknown>(
-    url: string,
-    body: B,
-    config?: AxiosRequestConfig
-  ): Promise<AxiosResponse<T>> {
-    return statusChecker(await this._httpClient.patch<T>(url, body, config));
-  }
-
-  async put<T = unknown, B = unknown>(
-    url: string,
-    body: B,
-    config?: AxiosRequestConfig
-  ): Promise<AxiosResponse<T>> {
-    return statusChecker(await this._httpClient.put<T>(url, body, config));
-  }
-
-  async delete(url: string): Promise<AxiosResponse<null>> {
-    return statusChecker(await this._httpClient.delete(url));
-  }
 }
 
 export const apiService = new ApiService();

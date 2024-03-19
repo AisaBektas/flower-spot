@@ -42,7 +42,6 @@ export const Navbar: FC = () => {
   }, []);
 
   useEffect(() => {
-    console.log("mobileMenu", isMobileMenuOpen);
     if (isMobileMenuOpen) {
       document.body.classList.add("overflow-hidden");
     } else {
@@ -58,6 +57,7 @@ export const Navbar: FC = () => {
           <button
             onClick={toggleMobileMenu}
             type="button"
+            data-testid="mobile-menu-toggle"
             className="block items-center h-10 justify-center lg:hidden"
           >
             <img

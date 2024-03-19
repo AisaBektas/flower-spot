@@ -19,7 +19,6 @@ export const useLogin = (): any => {
     mutationFn: authApiService.login,
     onSuccess: (data: any) => {
       tokenService.token = data.auth_token;
-      console.log("useLogin token", data.auth_token);
       onToggle();
     },
     onError: () => {

@@ -1,4 +1,4 @@
-import { useForm } from "react-hook-form";
+import { FieldValues, useForm, SubmitHandler } from "react-hook-form";
 import { FC } from "react";
 import SearchIcon from "../../../assets/icons/search.svg";
 
@@ -7,9 +7,13 @@ export const SearchForm: FC = () => {
     register,
     handleSubmit,
     formState: {},
-  } = useForm();
+  } = useForm<FieldValues>({
+    defaultValues: {
+      search: "",
+    },
+  });
 
-  const send = async (data: any) => {
+  const send: SubmitHandler<FieldValues> = (data) => {
     console.log("search data", data);
   };
 

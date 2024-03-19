@@ -1,0 +1,195 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Navbar Component > snapshot test for toggling mobile menu icon and close icon visibility 1`] = `
+<div>
+  <nav
+    class="fixed lg:shadow-none shadow-lg left-0 right-0 top-0 z-50 md:z-10 w-full transition duration-300 ease-in-out bg-white"
+  >
+    <div
+      class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4"
+    >
+      <a
+        href="/"
+      >
+        <img
+          alt="FlowrSpot Logo"
+          class="h-[30px] w-[169px]"
+          src="/src/assets/logo.png"
+          title="FlowrSpot Logo"
+        />
+      </a>
+      <div
+        class="flex items-center lg:hidden"
+      >
+        <button
+          class="block items-center h-10 justify-center lg:hidden"
+          data-testid="mobile-menu-toggle"
+          type="button"
+        >
+          <img
+            alt="Menu Icon"
+            class="h-3 w-6 hidden"
+            src="/src/assets/icons/menu.svg"
+          />
+          <img
+            alt="Close Icon"
+            class="h-6 w-6 block"
+            src="/src/assets/icons/close.svg"
+          />
+        </button>
+      </div>
+      <div
+        class="flex h-screen w-full items-center justify-between overflow-y-auto pb-20 lg:flex lg:h-auto lg:w-auto lg:justify-end lg:pb-0"
+      >
+        <div
+          class="flex lg:flex-row flex-col items-center"
+        >
+          <ul
+            class="flex flex-col rounded-md space-y-10 lg:space-y-0 my-6 lg:my-0 font-medium text-gray lg:flex-row lg:space-x-14"
+          >
+            <li>
+              <a
+                class="text-sm font-medium font-montserrat hover:border-blue border-b border-transparent"
+                href="/flowers"
+              >
+                Flowers
+              </a>
+            </li>
+            <li>
+              <a
+                class="text-sm font-medium font-montserrat hover:border-blue border-b border-transparent"
+                href="/latest-sightings"
+              >
+                Latest Sightings
+              </a>
+            </li>
+            <li>
+              <a
+                class="text-sm font-medium font-montserrat hover:border-blue border-b border-transparent"
+                href="/favorites"
+              >
+                Favorites
+              </a>
+            </li>
+          </ul>
+          <div
+            class="mt-4 lg:mt-0 lg:mr-8 lg:ml-14 flex w-full lg:w-auto pl-5 lg:pl-0"
+          >
+            <button
+              class="text-red-600 font-montserrat font-medium text-sm"
+            >
+              Login
+            </button>
+          </div>
+          <div
+            class="mt-12 lg:mt-0 ml-4 lg:ml-0"
+          >
+            <button
+              class="bg-gradient-to-l font-montserrat font-medium from-red-100 via-red-100 to-red-500 rounded-3xl px-6 py-2.5 text-sm text-white"
+            >
+              New Account
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+`;
+
+exports[`Navbar Component > snapshot test for toggling mobile menu icon and close icon visibility 2`] = `
+<div>
+  <nav
+    class="fixed lg:shadow-none shadow-lg left-0 right-0 top-0 z-50 md:z-10 w-full transition duration-300 ease-in-out bg-white"
+  >
+    <div
+      class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4"
+    >
+      <a
+        href="/"
+      >
+        <img
+          alt="FlowrSpot Logo"
+          class="h-[30px] w-[169px]"
+          src="/src/assets/logo.png"
+          title="FlowrSpot Logo"
+        />
+      </a>
+      <div
+        class="flex items-center lg:hidden"
+      >
+        <button
+          class="block items-center h-10 justify-center lg:hidden"
+          data-testid="mobile-menu-toggle"
+          type="button"
+        >
+          <img
+            alt="Menu Icon"
+            class="h-3 w-6 block"
+            src="/src/assets/icons/menu.svg"
+          />
+          <img
+            alt="Close Icon"
+            class="h-6 w-6 hidden"
+            src="/src/assets/icons/close.svg"
+          />
+        </button>
+      </div>
+      <div
+        class="hidden h-screen w-full items-center justify-between overflow-y-auto pb-20 lg:flex lg:h-auto lg:w-auto lg:justify-end lg:pb-0"
+      >
+        <div
+          class="flex lg:flex-row flex-col items-center"
+        >
+          <ul
+            class="flex flex-col rounded-md space-y-10 lg:space-y-0 my-6 lg:my-0 font-medium text-gray lg:flex-row lg:space-x-14"
+          >
+            <li>
+              <a
+                class="text-sm font-medium font-montserrat hover:border-blue border-b border-transparent"
+                href="/flowers"
+              >
+                Flowers
+              </a>
+            </li>
+            <li>
+              <a
+                class="text-sm font-medium font-montserrat hover:border-blue border-b border-transparent"
+                href="/latest-sightings"
+              >
+                Latest Sightings
+              </a>
+            </li>
+            <li>
+              <a
+                class="text-sm font-medium font-montserrat hover:border-blue border-b border-transparent"
+                href="/favorites"
+              >
+                Favorites
+              </a>
+            </li>
+          </ul>
+          <div
+            class="mt-4 lg:mt-0 lg:mr-8 lg:ml-14 flex w-full lg:w-auto pl-5 lg:pl-0"
+          >
+            <button
+              class="text-red-600 font-montserrat font-medium text-sm"
+            >
+              Login
+            </button>
+          </div>
+          <div
+            class="mt-12 lg:mt-0 ml-4 lg:ml-0"
+          >
+            <button
+              class="bg-gradient-to-l font-montserrat font-medium from-red-100 via-red-100 to-red-500 rounded-3xl px-6 py-2.5 text-sm text-white"
+            >
+              New Account
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+`;

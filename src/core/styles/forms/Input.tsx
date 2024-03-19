@@ -1,6 +1,6 @@
 import { FieldErrors, FieldValues, UseFormRegister } from "react-hook-form";
 
-interface InputProps {
+interface IInputProps {
   id: string;
   label: string;
   type?: string;
@@ -9,7 +9,7 @@ interface InputProps {
   errors: FieldErrors;
 }
 
-const Input: React.FC<InputProps> = ({
+const Input: React.FC<IInputProps> = ({
   id,
   label,
   type = "text",
