@@ -16,6 +16,7 @@
 
 - Vite.js: Vite.js is used as the build tool and development server, providing a fast and efficient environment for building React applications.
 - React: The core of Flower Spot, React enables the creation of interactive and dynamic user interfaces.
+- React Query: React Query is integrated to manage server state and fetch data seamlessly, offering a powerful solution for handling asynchronous operations, such as API requests, caching, and background updates.
 - TypeScript: TypeScript is used for type-checking and enhancing code readability, providing a robust development experience.
 - Tailwind CSS: Tailwind CSS is utilized for styling, offering a utility-first approach for quickly building custom designs without the need for writing CSS from scratch.
 
@@ -25,4 +26,4 @@
 - NPM version: `10.1.0`
 - Install dependencies: `npm install`
 - Start the development server: `npm run dev`
-- Open your browser and go to [@http://localhost:3000] to view the app.
+- Open your browser and go to [http://localhost:3000](http://localhost:3000) to view the app.
