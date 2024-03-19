@@ -25,4 +25,4 @@
 - NPM version: `10.1.0`
 - Install dependencies: `npm install`
 - Start the development server: `npm run dev`
-- Open your browser and go to [http://localhost:3000] to view the app.
+- Open your browser and go to [@http://localhost:3000] to view the app.

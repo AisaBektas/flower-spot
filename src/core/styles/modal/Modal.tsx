@@ -49,7 +49,7 @@ const Modal: FC<IModalProps> = ({
               leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95"
             >
-              <Dialog.Panel className="w-full h-screen md:h-auto md:max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+              <Dialog.Panel className="w-full h-screen md:h-auto md:max-w-md transform overflow-hidden rounded bg-white p-6 text-left align-middle shadow-xl transition-all">
                 <Dialog.Title
                   as="div"
                   className="flex items-center rounded-t justify-center relative"
@@ -69,6 +69,7 @@ const Modal: FC<IModalProps> = ({
                 <div className="mt-6">
                   {actionLabel && (
                     <button
+                      type="submit"
                       className="rounded font-ubuntu shadow-xl hover:opacity-85 transition w-full bg-gradient-to-l h-12 font-medium text-sm text-white from-red-100 via-red-100 to-red-500"
                       onClick={handleSubmit}
                     >

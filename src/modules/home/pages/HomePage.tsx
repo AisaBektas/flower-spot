@@ -2,9 +2,24 @@ import Layout from "../../../core/styles/Layout";
 import { SearchForm } from "../../../core/styles/forms/SearchForm";
 import { useFlowers } from "../../flowers/hooks/useFlowers";
 import { FlowerCard } from "../../../core/styles/card/FlowerCard";
+import { useMyInfo } from "../providers/MyInfoProvider";
+import useToken from "../hooks/useToken";
+import { useEffect } from "react";
+import { useGetMyInfo } from "../hooks/useGetMyInfo";
 
 export const HomePage = () => {
   const { data, isLoading } = useFlowers();
+
+  const { data: myInfoData, refetch } = useGetMyInfo();
+  const { setMyInfo } = useMyInfo();
+  const { token } = useToken();
+
+  useEffect(() => {
+    if (token) {
+      refetch();
+      setMyInfo(myInfoData);
+    }
+  }, [myInfoData]);
 
   if (isLoading) return <div>Loading...</div>;
 

@@ -14,7 +14,6 @@ class AuthApiService {
     const loginResponse: any = apiService.responseHandler(
       await apiService.post<any>("v1/users/login", credentials)
     );
-
     return loginResponse;
   }
 

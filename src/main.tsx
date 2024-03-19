@@ -17,15 +17,15 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
     <QueryClientProvider client={queryClient}>
       <RegisterModalProvider>
         <RegisterSuccessModalProvider>
-          <LoginSuccessModalProvider>
+          <LoginModalProvider>
             <ProfileModalProvider>
-              <LoginModalProvider>
+              <LoginSuccessModalProvider>
                 <MyInfoProvider>
                   <App />
                 </MyInfoProvider>
-              </LoginModalProvider>
+              </LoginSuccessModalProvider>
             </ProfileModalProvider>
-          </LoginSuccessModalProvider>
+          </LoginModalProvider>
         </RegisterSuccessModalProvider>
       </RegisterModalProvider>
     </QueryClientProvider>

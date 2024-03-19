@@ -4,16 +4,15 @@ import { tokenService } from "../../../core/api/services/tokenService";
 import { authApiService } from "../services/authApiService";
 import { useLoginModal } from "../../../core/hooks/useLoginModal";
 import { useLoginSuccessModal } from "../../../core/hooks/useLoginSuccessModal";
-import { useCallback } from "react";
 
 export const useLogin = (): any => {
   const loginModal = useLoginModal();
   const loginSuccessModal = useLoginSuccessModal();
 
-  const onToggle = useCallback(() => {
+  const onToggle = () => {
     loginModal.onClose();
     loginSuccessModal.onOpen();
-  }, [loginSuccessModal, loginModal]);
+  };
 
   return useMutation({
     mutationFn: authApiService.login,

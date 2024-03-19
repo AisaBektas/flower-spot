@@ -51,7 +51,7 @@ export const Navbar: FC = () => {
 
   return (
     <nav className="fixed lg:shadow-none shadow-lg left-0 right-0 top-0 z-50 md:z-10 w-full transition duration-300 ease-in-out bg-white">
-      <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
+      <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-5">
         <Logo />
         <div className="flex items-center lg:hidden">
           <button
@@ -101,7 +101,10 @@ export const Navbar: FC = () => {
             <div className="mt-4 lg:mt-0 lg:mr-8 lg:ml-14 flex w-full lg:w-auto pl-5 lg:pl-0">
               {myInfo?.user ? (
                 <button
-                  onClick={profileModal.onOpen}
+                  onClick={() => {
+                    setMobileMenuOpen(false);
+                    profileModal.onOpen();
+                  }}
                   className="flex items-center space-x-4"
                 >
                   <p className="text-red-600 font-montserrat font-medium text-xs">{`${myInfo?.user.first_name} ${myInfo?.user.last_name}`}</p>

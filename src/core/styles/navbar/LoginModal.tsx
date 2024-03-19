@@ -27,10 +27,10 @@ const LoginModal = () => {
 
   const { data: myInfoData, refetch } = useGetMyInfo();
 
-  const onSubmit: SubmitHandler<FieldValues> = (data) => {
-    login(data).then(() => {
-      refetch();
-    });
+  const onSubmit: SubmitHandler<FieldValues> = async (data) => {
+    await login(data);
+    await refetch();
+    setMyInfo(myInfoData);
     reset();
   };
 

@@ -51,9 +51,9 @@ const ProfileModal = () => {
       <div className="flex justify-center mb-4">
         <button
           onClick={() => {
+            profileModal.onClose();
             logout();
             setMyInfo({});
-            profileModal.onClose();
           }}
           className="rounded mt-6 shadow-xl hover:opacity-85 transition bg-gradient-to-l py-4 px-14 font-medium text-sm text-white from-red-100 via-red-100 to-red-500"
         >
